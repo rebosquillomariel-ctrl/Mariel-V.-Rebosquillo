@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25;
+            padding: 0;
+            background-color: gray;
+            color: black;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: pink;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        h1, h2 {
+            color:black;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        #projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .project {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: orange;
+        }
+        .project img {
+            max-width: 20%; /* Ajustado para una mejor respuesta */
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .project a {
+            color: blue;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: violet;
+        }
+        /* Estilos para los contactos en columnas */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea columnas responsivas */
+            gap: 5px; /* Espacio entre las columnas */
+        }
+        .contact-item {
+            padding: 5px;
+            border: 1px solid #eee;
+            border-radius: 2px;
+        }
+        /* Clase central para los encabezados */
+        .center {
+            text-align: center;
+        }
+        /* Estilo para la tabla de plataformas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+        /* Estilo para el formulario de contacto */
+        #contactForm {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        #contactForm label {
+            margin-top: 10px;
+        }
+        #contactForm input,
+        #contactForm textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #contactForm button {
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #contactForm button:hover {
+            background-color: blue;
+        }
+
+        /* Estilo para la imagen de perfil circular */
+        .profile-pic {
+            border-radius: 50%;
+            object-fit: cover; /* Para mantener la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="For profile~2.jpg" alt="Foto de Perfil" width="200" height="200" class="profile-pic"> <!-- Aquí va la foto de perfil -->
+            <h2>"Mariel V. Rebosquillo"</h2>
+          
+                <p>•A dreamer•</p>
+        </header>
+        <section id="about" class="section">
+            <header class="center">
+                <h3>About me</h3>
+            </header>
+            <p>
+                As a student at CPSU from the Department of Computer Studies, pursuing a Bachelor of Science in Information Technology (BSIT), being a computer student isn't easy. My course degree is heavily focused on computers, which can be challenging for me because I'm not naturally skilled when it comes to programming using various languages like JavaScript, HTML, and C++. However, I believe that even though it's difficult it won't be hard if you study diligently and listen attentively to everything that is taught. Personally, I prefer video editing using Adobe Premiere and photo editing using Photoshop.
+            </p>
+        </section>
+        <section id="skills" class="section">
+            <header class="center">
+                <h3>Experiences</h3>
+            </header>
+            <ul>
+                <li>My IT education has equipped me with the technical skills and problem-solving abilities necessary to excel in a dynamic and evolving industry.</li>
+                <li>I developed programming using html, javascript, C++ as part of my capstone project, demonstrating my ability to apply my IT knowledge to solve real-world problems.</li>
+                <li>I designed and implemented disaster recovery plans to minimize downtime and ensure business continuity in the event of a system failure.</li>
+            </ul>
+        </section>
+        <section>
+            <header class="center">
+                <h3>Some of my activities</h3>
+            </header>
+            <table>
+                <tr>
+                    <td><img src="Pic 2.png" alt="Adobe Premiere" width="150" height="150"></td>
+                </tr>
+                <tr>
+                    <h4> <p> Chess Board Layout</p></h4>
+                    <td>"In this photo, 'Chess board layout', I have been experiencing different emotions because every time I study this problem, my mind wanders and I don't know what I should do. This struggle has taught me the importance of patience and persistence in the learning process."  </tr>
+            </table>
+        </section>
+        <section>
+            <header class="center">
+                <h4></h4>
+            </header>
+            <table>
+                <tr>
+                    <td><img src="Poster.jpg" alt="Figma" width="350" height="150"></td>
+                </tr>
+                <tr>
+                    <h4><p>Poster Layout </p></h4>
+                    <td>"This photo was created using Adobe Photoshop. While editing this type of layout, I struggled quite a bit because the first step is always experimenting with all the available tools to achieve the perfect layout. It's about finding the best tools that suit my workflow to get beautiful results. Through this process, I've learned the importance of exploring all the options before settling on a technique." </tr>
+            </table>
+        </section>
+        <section>
+            <header class="center">
+                <h4></h4>
+            </header>
+            <table>
+                <tr>
+                    <td><img src="T-shirt.jpg" alt="Adobe Photoshop" width="350" height="200"></td>
+                </tr>
+                <tr>
+                    <h4><p>T-shirt design Layout</p></h4>
+                    <td>"This photo was created using Adobe Photoshop. While working on it, I spent a significant amount of time trying to perfect it, often repeating steps five times or more because I sometimes struggle to make clear decisions at the outset. I reworked it many times to achieve perfection, and I'm proud to say that I completed it independently, without seeking assistance. As they say, 'Try and try until you succeed.' This project reinforced the value of perseverance and self-reliance in achieving my goals." </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <header class="center">
+                <h4></h4>
+            </header>
+            <table>
+                <tr>
+                    <td><img src="Product.jpg" alt="Adobe Photoshop" width="350" height="250"></td>
+                </tr>
+                <tr>
+                    <h4><p>Product Layout</p></h4>
+                    <td>This image was created using Adobe Photoshop. My experience with product design is similar to that with clothing design, but I find product design more challenging. This is because you need to have an original design, and it all needs to be created in Photoshop. You shouldn't take pictures from Google or anywhere else; it should be your own design to avoid plagiarism and copyright infringement. </td>
+                </tr>
+            </table>
+        </section>
+        <section id="projects" class="section">
+            <header class="center">
+                <h3>Projects</h3>
+            </header>
+            <div id="projects">
+                <div class="project">
+                    <img src="Marrebs.jpg" alt="Canva">
+                    <h4>Personal Website using Canva</h4>
+                    <p>"My personal website using Canva is a work in progress, but I'm happy with the progress so far."</p>
+                    <a href="https://www.canva.com/design/DAGvY3isHqQ/Al1hlQKsfOAqGQRwjs9tDQ/edit?utm_content=DAGvY3isHqQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Visit here</a>
+                </div>
+                <div class="project">
+                    <img src="Pic3.png" alt="Figma">
+                    <h4>E-comerce design using Figma</h4>
+                    <p>Developed using Figma, this e-commerce platform design emphasizes a seamless and intuitive user experience. The design leverages Figma's advanced features, such as components, styles, and interactive prototypes, to create a highly consistent and scalable design system.</p>
+                    <a href="https://www.figma.com/proto/pvg4QG4kcv47uFeBXnoZjB/Untitled?node-id=1-2&t=GqDddmQ2uJGoJ7rY-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1">Visit here</a>
+                </div>
+                <div class="project">
+                    <img src="Pic3.png" alt="Figma">
+                    <h4>Personal Website using Figma</h4>
+                    <p>"Crafted with Figma and inspired by Canva's versatile elements, this personal website offers a sleek and intuitive user experience. Showcasing a blend of modern design principles and user-friendly navigation, it's the perfect digital canvas to highlight your unique story and professional portfolio."</p>
+                    <a href="https://www.figma.com/proto/EQoxoZ9oF6Thd8HUG3vUZY/Untitled?node-id=1-2&t=2mGlvCUGBZNyMKjS-1">Visit here</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header class="center">
+                <h4>Some Platforms I've been Used</h4>
+            </header>
+            <table>
+                <tr>
+                    <td><img src="Pic 2.png" alt="Adobe Premiere" width="100" height="100"></td>
+                    <td><img src="Pic3.png" alt="Figma" width="100" height="100"></td>
+                    <td><img src="Pic1.png" alt="Adobe Photoshop" width="100" height="100"></td>
+                </tr>
+                <tr>
+                    <td>Premiere</td>
+                    <td>Figma</td>
+                    <td>Photoshop</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <header class="center">
+                <h3> Video Tutorial in Youtube</h3>
+            </header>
+            <table>
+                <tr>
+                    <td><video src="https://youtu.be/o9GWu0Nv8hM?si=HAHWtUjQ1TCGITOP" alt="Me" width="100" height="100" controls></video></td>
+                    <td><video src="https://youtu.be/M69kId2AL5s?si=qkoKu9IEHKoNHwED" alt="Lipsync" width="100" height="100" controls></video></td>
+                    <td><video src="https://youtube.com/shorts/bCHuVGg-H_s?si=BrmYYCgr3wLmFixq" alt="When I was grade 12" width="100" height="100" controls></video></td>
+                </tr>
+                <tr>
+                    <td>Tutorial</td>
+                    <td>10 Things Tutorial</td>
+                    <td>Tutorial</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact" class="section">
+            <header class="center">
+                <h3>Contact me</h3>
+                <td>If you have a question, dont be shy to messsage me on </td>
+            </header>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <p>TikTok: <a href="">Click me</a></p>
+                </div>
+                <div class="contact-item">
+                    <p>Facebook: <a href="">Click me</a></p>
+                </div>
+                <div class="contact-item">
+                    <p>Instagram: <a href="">Click me</a></p>
+                </div>
+                <div class="contact-item">
+                    <p>Email: <a href="rebosquillomariel@gmail.com">gmail</a></p>
+                </div>
+                <header class= "center">
+                    <td> or</td>
+                </header>
+                <div class="contact-item">
+                    <p>Call me: 09931163449</p>
+                </div>
+            </div>
+            <header  class="center">
+                <td> ""I am happy to serve you""</td></header>
+        </section>
+        <section>
+            <header class ="center">
+                <h3></h3></header>
+            <h3><p>Additional:</p></h3>
+            <td>If you dont have any kind of platforms, you can drop here your information and message me using this form thank you.
+            </td>
+            <h5><p>Optional only</p></h5>
+            <form id="contactForm">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="comments">Message:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Enter your message here..."></textarea>
+                <div class="center">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>""THANK YOU FOR SPENDING YOUR TIME"" </p>
+            <p>-GOD BLESS YOU-</p>
+        </footer>
+    </div>
+    <script>
+        // Prototipado Básico
+        document.querySelectorAll('.prototype-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const prototype = this.getAttribute('data-prototype');
+                alert(`Prototype of ${prototype} is under construction...`);
+            });
+        });
+        // Simulación de Envío de Formulario
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted (simulation)');
+            this.reset(); // Limpiar el formulario
+        });
+    </script>
+</body>
+</html>
